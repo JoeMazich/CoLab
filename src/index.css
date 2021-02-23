@@ -5,9 +5,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: local('Montserrat-Regular'), url(./fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: local('Montserrat-Light'), url(./fonts/Montserrat-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Semibold';
+  src: local('Montserrat-Semibold'), url(./fonts/Montserrat-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Light-Italic';
+  src: local('Montserrat-Light-Italic'), url(./fonts/Montserrat-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium-Italic';
+  src: local('Montserrat-Medium-Italic'), url(./fonts/Montserrat-MediumItalic.ttf) format('truetype');
 }

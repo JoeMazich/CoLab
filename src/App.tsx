@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import HeaderText from './components/HeaderText';
+import MessageInput from './components/MessageInput';
+import SendMessageButton from './components/SendMessageButton';
+import { db } from './services/firebase';
 
-function App() {
+const App: React.FC = () => {
+  const [message, setMessage] = useState<string>('');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderText text='Messages' />
+      <br />
+      <br />
+      <br />
+      <MessageInput setMessage={setMessage} />
+      <SendMessageButton message={message} />
     </div>
   );
-}
+};
 
 export default App;
